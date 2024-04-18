@@ -20,7 +20,7 @@ builder.Services.AddControllers();
 builder.Services.AddDbContext<AbsanteeContext>(opt =>
     //opt.UseInMemoryDatabase("AbsanteeList")
     //opt.UseSqlite("Data Source=AbsanteeDatabase.sqlite")
-    opt.UseSqlite(Host.CreateApplicationBuilder().Configuration.GetConnectionString("AbsanteeDatabase"))
+    opt.UseSqlite(Host.CreateApplicationBuilder().Configuration.GetConnectionString(queueName))
     );
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

@@ -22,43 +22,43 @@ namespace WebApi.Controllers
             _colaboratorService = colaboratorService;
         }
 
-        // GET: api/Colaborator
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<ColaboratorDTO>>> GetColaborators()
-        {
-            IEnumerable<ColaboratorDTO> colabsDTO = await _colaboratorService.GetAllWithAddress();
+        // // GET: api/Colaborator
+        // [HttpGet]
+        // public async Task<ActionResult<IEnumerable<ColaboratorDTO>>> GetColaborators()
+        // {
+        //     IEnumerable<ColaboratorDTO> colabsDTO = await _colaboratorService.GetAllWithAddress();
 
-            return Ok(colabsDTO);
-        }
+        //     return Ok(colabsDTO);
+        // }
 
 
-        // GET: api/Colaborator/5
-        [HttpGet("{id}")]
-        public async Task<ActionResult<ColaboratorDTO>> GetColaboratorById(long id)
-        {
-            var colaboratorDTO = await _colaboratorService.GetByIdWithAddress(id);
+        // // GET: api/Colaborator/5
+        // [HttpGet("{id}")]
+        // public async Task<ActionResult<ColaboratorDTO>> GetColaboratorById(long id)
+        // {
+        //     var colaboratorDTO = await _colaboratorService.GetByIdWithAddress(id);
 
-            if (colaboratorDTO == null)
-            {
-                return NotFound();
-            }
+        //     if (colaboratorDTO == null)
+        //     {
+        //         return NotFound();
+        //     }
 
-            return Ok(colaboratorDTO);
-        }
+        //     return Ok(colaboratorDTO);
+        // }
 
-        // GET: api/Colaborator/a@bc
-        [HttpGet("email/{email}")]
-        public async Task<ActionResult<ColaboratorDTO>> GetColaboratorByEmail(string email)
-        {
-            var colaboratorDTO= await _colaboratorService.GetByEmailWithAddress(email);
+        // // GET: api/Colaborator/a@bc
+        // [HttpGet("email/{email}")]
+        // public async Task<ActionResult<ColaboratorDTO>> GetColaboratorByEmail(string email)
+        // {
+        //     var colaboratorDTO= await _colaboratorService.GetByEmailWithAddress(email);
 
-            if (colaboratorDTO == null)
-            {
-                return NotFound();
-            }
+        //     if (colaboratorDTO == null)
+        //     {
+        //         return NotFound();
+        //     }
 
-            return Ok(colaboratorDTO);
-        }
+        //     return Ok(colaboratorDTO);
+        // }
 
     }
 }

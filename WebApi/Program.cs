@@ -11,6 +11,8 @@ using Microsoft.OpenApi.Any;
 
 var builder = WebApplication.CreateBuilder(args);
 
+string queueName = args.Length > 0 ? args[0] : "colab_logs";
+
 // Add services to the container.
 
 builder.Services.AddControllers();
@@ -62,7 +64,7 @@ app.MapControllers();
 
 
 var rabbitMQConsumerService = app.Services.GetRequiredService<IColaboratorConsumer>();
-rabbitMQConsumerService.StartColaboratorConsuming();
+rabbitMQConsumerService.StartColaboratorConsuming(queueName);
  
 
 app.Run();

@@ -51,3 +51,4 @@ C:\Works\ColaboratorQ\Application\obj\Debug\net8.0\Application.dll
 C:\Works\ColaboratorQ\Application\obj\Debug\net8.0\refint\Application.dll
 C:\Works\ColaboratorQ\Application\obj\Debug\net8.0\Application.pdb
 C:\Works\ColaboratorQ\Application\obj\Debug\net8.0\ref\Application.dll
+C:\Works\ColaboratorQ\Application\obj\Debug\net8.0\Application.sourcelink.json

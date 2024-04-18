@@ -854,3 +854,4 @@ C:\Works\ColaboratorQ\webapi\obj\Debug\net8.0\scopedcss\bundle\WebApi.styles.css
 C:\Works\ColaboratorQ\webapi\obj\Debug\net8.0\WebApi.csproj.Up2Date
 C:\Works\ColaboratorQ\webapi\obj\Debug\net8.0\WebApi.genruntimeconfig.cache
 C:\Works\ColaboratorQ\webapi\obj\Debug\net8.0\ref\WebApi.dll
+C:\Works\ColaboratorQ\webapi\obj\Debug\net8.0\WebApi.sourcelink.json

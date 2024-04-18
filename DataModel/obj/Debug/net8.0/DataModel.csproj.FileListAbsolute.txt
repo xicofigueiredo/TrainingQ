@@ -51,3 +51,4 @@ C:\Works\ColaboratorQ\DataModel\obj\Debug\net8.0\refint\DataModel.dll
 C:\Works\ColaboratorQ\DataModel\obj\Debug\net8.0\DataModel.pdb
 C:\Works\ColaboratorQ\DataModel\obj\Debug\net8.0\DataModel.genruntimeconfig.cache
 C:\Works\ColaboratorQ\DataModel\obj\Debug\net8.0\ref\DataModel.dll
+C:\Works\ColaboratorQ\DataModel\obj\Debug\net8.0\DataModel.sourcelink.json

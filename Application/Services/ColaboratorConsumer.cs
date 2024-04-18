@@ -11,7 +11,7 @@ using static System.Formats.Asn1.AsnWriter;
 public class ColaboratorConsumer : IColaboratorConsumer
 {
     private readonly IModel _channel;
-    private readonly string _queueName;
+    
     private readonly IServiceScopeFactory _serviceScopeFactory;
 
      List<string> _errorMessages = new List<string>();
@@ -62,6 +62,6 @@ public class ColaboratorConsumer : IColaboratorConsumer
             Console.WriteLine($" [ColaboratorConsumer] {message}");
         };
 
-        _channel.BasicConsume(queue: _queueName, autoAck: true, consumer: consumer);
+        _channel.BasicConsume(queue: queueName, autoAck: true, consumer: consumer);
     }
 }

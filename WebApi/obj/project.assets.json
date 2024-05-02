@@ -3049,6 +3049,7 @@
         "dependencies": {
           "DataModel": "1.0.0",
           "Domain": "1.0.0",
+          "GateWay": "1.0.0",
           "RabbitMQ.Client": "6.8.1"
         },
         "compile": {
@@ -3084,6 +3085,19 @@
         },
         "runtime": {
           "bin/placeholder/Domain.dll": {}
+        }
+      },
+      "GateWay/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "RabbitMQ.Client": "6.8.1"
+        },
+        "compile": {
+          "bin/placeholder/GateWay.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GateWay.dll": {}
         }
       }
     }
@@ -8682,6 +8696,11 @@
       "type": "project",
       "path": "../Domain/Domain.csproj",
       "msbuildProject": "../Domain/Domain.csproj"
+    },
+    "GateWay/1.0.0": {
+      "type": "project",
+      "path": "../GateWay/GateWay.csproj",
+      "msbuildProject": "../GateWay/GateWay.csproj"
     }
   },
   "projectFileDependencyGroups": {

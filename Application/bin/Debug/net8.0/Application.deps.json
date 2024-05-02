@@ -10,6 +10,7 @@
         "dependencies": {
           "DataModel": "1.0.0",
           "Domain": "1.0.0",
+          "GateWay": "1.0.0",
           "RabbitMQ.Client": "6.8.1"
         },
         "runtime": {
@@ -2152,6 +2153,14 @@
         "runtime": {
           "Domain.dll": {}
         }
+      },
+      "GateWay/1.0.0": {
+        "dependencies": {
+          "RabbitMQ.Client": "6.8.1"
+        },
+        "runtime": {
+          "GateWay.dll": {}
+        }
       }
     }
   },
@@ -3329,6 +3338,11 @@
       "sha512": ""
     },
     "Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "GateWay/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

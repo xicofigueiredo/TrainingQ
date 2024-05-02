@@ -16,8 +16,8 @@ public class AbsanteeContext : DbContext
 		Database.EnsureCreated();
 	}
 
-	public virtual DbSet<ColaboratorDataModel> Colaborators { get; set; } = null!;
-	public virtual DbSet<AddressDataModel> Address { get; set; } = null!;
+	public virtual DbSet<TrainingDataModel> Trainings { get; set; } = null!;
+	public virtual DbSet<ColaboratorsIdDataModel> ColaboratorsId { get; set; } = null!;
 
 
 

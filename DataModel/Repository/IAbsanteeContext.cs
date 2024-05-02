@@ -6,5 +6,5 @@ using DataModel.Model;
 
 public interface IAbsanteeContext
 {
-	DbSet<ColaboratorDataModel> Colaboradores { get; set; }
+	DbSet<TrainingDataModel> Trainings { get; set; }
 }

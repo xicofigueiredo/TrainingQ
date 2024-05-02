@@ -1141,3 +1141,14 @@ C:\Users\ffigueiredo\academia\ColaboratorQ\WebApi\obj\Debug\net8.0\refint\WebApi
 C:\Users\ffigueiredo\academia\ColaboratorQ\WebApi\obj\Debug\net8.0\WebApi.pdb
 C:\Users\ffigueiredo\academia\ColaboratorQ\WebApi\obj\Debug\net8.0\WebApi.genruntimeconfig.cache
 C:\Users\ffigueiredo\academia\ColaboratorQ\WebApi\obj\Debug\net8.0\ref\WebApi.dll
+C:\Users\ffigueiredo\academia\TrainingQ\WebApi\obj\Debug\net8.0\WebApi.dll
+C:\Users\ffigueiredo\academia\TrainingQ\WebApi\obj\Debug\net8.0\refint\WebApi.dll
+C:\Users\ffigueiredo\academia\TrainingQ\WebApi\obj\Debug\net8.0\WebApi.pdb
+C:\Users\ffigueiredo\academia\TrainingQ\WebApi\obj\Debug\net8.0\WebApi.csproj.AssemblyReference.cache
+C:\Users\ffigueiredo\academia\TrainingQ\WebApi\obj\Debug\net8.0\WebApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ffigueiredo\academia\TrainingQ\WebApi\obj\Debug\net8.0\WebApi.AssemblyInfoInputs.cache
+C:\Users\ffigueiredo\academia\TrainingQ\WebApi\obj\Debug\net8.0\WebApi.AssemblyInfo.cs
+C:\Users\ffigueiredo\academia\TrainingQ\WebApi\obj\Debug\net8.0\WebApi.csproj.CoreCompileInputs.cache
+C:\Users\ffigueiredo\academia\TrainingQ\WebApi\obj\Debug\net8.0\WebApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\ffigueiredo\academia\TrainingQ\WebApi\obj\Debug\net8.0\WebApi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ffigueiredo\academia\TrainingQ\WebApi\obj\Debug\net8.0\WebApi.sourcelink.json

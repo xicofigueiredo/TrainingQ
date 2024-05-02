@@ -6,7 +6,7 @@ public interface IUnitOfWork : IDisposable
 {
     IGenericRepository Generic { get; }
 
-    IColaboratorRepository ColaboratorRepository { get; }
+    ITrainingRepository TrainingRepository { get; }
 
     Task<int> CompleteAsync();
 }

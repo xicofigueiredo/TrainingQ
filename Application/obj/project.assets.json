@@ -2948,6 +2948,19 @@
         "runtime": {
           "bin/placeholder/Domain.dll": {}
         }
+      },
+      "GateWay/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "RabbitMQ.Client": "6.8.1"
+        },
+        "compile": {
+          "bin/placeholder/GateWay.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GateWay.dll": {}
+        }
       }
     }
   },
@@ -8169,12 +8182,18 @@
       "type": "project",
       "path": "../Domain/Domain.csproj",
       "msbuildProject": "../Domain/Domain.csproj"
+    },
+    "GateWay/1.0.0": {
+      "type": "project",
+      "path": "../GateWay/GateWay.csproj",
+      "msbuildProject": "../GateWay/GateWay.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
       "DataModel >= 1.0.0",
       "Domain >= 1.0.0",
+      "GateWay >= 1.0.0",
       "RabbitMQ.Client >= 6.8.1"
     ]
   },
@@ -8211,6 +8230,9 @@
             },
             "C:\\Users\\ffigueiredo\\academia\\TrainingQ\\Domain\\Domain.csproj": {
               "projectPath": "C:\\Users\\ffigueiredo\\academia\\TrainingQ\\Domain\\Domain.csproj"
+            },
+            "C:\\Users\\ffigueiredo\\academia\\TrainingQ\\GateWay\\GateWay.csproj": {
+              "projectPath": "C:\\Users\\ffigueiredo\\academia\\TrainingQ\\GateWay\\GateWay.csproj"
             }
           }
         }

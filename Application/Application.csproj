@@ -3,6 +3,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Domain\Domain.csproj" />
     <ProjectReference Include="..\DataModel\DataModel.csproj" />
+    <ProjectReference Include="..\GateWay\GateWay.csproj" />
   </ItemGroup>
 
   <ItemGroup>

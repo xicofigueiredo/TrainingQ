@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "h+6l8cbyueC47QgYKF1ko2xqLqwuOIQHPWJ4usowp1EWTOSTymuD8p+r0J8BQJfNe1nvzSl0Ej+W6meJN4agKA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ffigueiredo\\academia\\TrainingQ\\GateWay\\GateWay.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ffigueiredo\\.nuget\\packages\\rabbitmq.client\\6.8.1\\rabbitmq.client.6.8.1.nupkg.sha512",
+    "C:\\Users\\ffigueiredo\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
+    "C:\\Users\\ffigueiredo\\.nuget\\packages\\system.threading.channels\\7.0.0\\system.threading.channels.7.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

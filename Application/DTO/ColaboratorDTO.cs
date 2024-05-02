@@ -1,71 +1,51 @@
 namespace Application.DTO;
 
-using DataModel.Mapper;
-using DataModel.Repository;
-using Domain.IRepository;
+using Domain.Factory;
 using Domain.Model;
 
-public class ColaboratorDTO
+public class ColaboratorIdDTO
 {
-	
 	public long Id { get; set; }
-	public string Email { get; set; }
-	public string Name { get; set; }
-	public string Street { get; set; }
-	public string PostalCode { get; set; }
-	
-	public ColaboratorDTO() {
+
+    public ColaboratorIdDTO() {
 	}
 
-	public ColaboratorDTO(long id, string strName, string strEmail, string strStreet, string strPostalCode)
+	public ColaboratorIdDTO(long colabId)
 	{
-		Id = id;
-		Name = strName;
-		Email = strEmail;
-		Street = strStreet;
-		PostalCode = strPostalCode;
+		Id = colabId;
 	}
 
-	// kdheqbf
+	static public ColaboratorIdDTO ToDTO(ColaboratorId colaboradorId) {
+		long idColab = colaboradorId.colabId;
+		ColaboratorIdDTO colaboratorIdDTO = new ColaboratorIdDTO(idColab);
 
-	static public ColaboratorDTO ToDTO(Colaborator colab) {
-
-		ColaboratorDTO colabDTO = new ColaboratorDTO(colab.GetId(), colab.GetName(), colab.GetEmail(), colab.GetStreet(), colab.GetPostalCode() );
-
-		return colabDTO;
+		return colaboratorIdDTO;
 	}
 
-	static public IEnumerable<ColaboratorDTO> ToDTO(IEnumerable<Colaborator> colabs)
+	static public IEnumerable<ColaboratorIdDTO> ToDTO(IEnumerable<ColaboratorId> colaboratorIds)
 	{
-		List<ColaboratorDTO> colabsDTO = new List<ColaboratorDTO>();
+		List<ColaboratorIdDTO> colaboratorsIdDTO = new List<ColaboratorIdDTO>();
 
-		foreach( Colaborator colab in colabs ) {
-			ColaboratorDTO colabDTO = ToDTO(colab);
+		foreach( ColaboratorId colaboratorId in colaboratorIds ) {
+			ColaboratorIdDTO holaboratorIdDTO = ToDTO(colaboratorId);
 
-			colabsDTO.Add(colabDTO);
+			colaboratorsIdDTO.Add(holaboratorIdDTO);
 		}
 
-		return colabsDTO;
+		return colaboratorsIdDTO;
 	}
 
-	static public Colaborator ToDomain(ColaboratorDTO colabDTO) {
-		
-		Colaborator colab = new Colaborator(colabDTO.Name, colabDTO.Email, colabDTO.Street, colabDTO.PostalCode);
+	static public ColaboratorId ToDomain(ColaboratorIdDTO colaboratorIdDTO) 
+	{
+		if (colaboratorIdDTO == null) 
+		{
+			throw new ArgumentException("colaboratorIdDTO must not be null");
+		}
 
-		return colab;
+
+		ColaboratorId colaboratorId = new ColaboratorId(colaboratorIdDTO.Id);
+
+		return colaboratorId;
 	}
 
-
-	static public Colaborator UpdateToDomain(Colaborator colab, ColaboratorDTO colabDTO) {
-
-		// não se permite alterar o email
-		//colab.Email = colabDTO.strEmail;
-		
-		colab.SetName(colabDTO.Name);
-
-		colab.UpdateAddress(colabDTO.Street, colabDTO.PostalCode);
-
-		return colab;
-
-	}
 }

@@ -22,11 +22,9 @@ public class ColaboratorConsumer : IColaboratorConsumer
         var factory = new ConnectionFactory { HostName = "localhost" };
         var connection = factory.CreateConnection();
         _channel = connection.CreateModel();
-
+        
         _channel.ExchangeDeclare(exchange: "colab_logs", type: ExchangeType.Fanout);
 
-        // _queueName =_channel.QueueDeclare().QueueName;
-        // _channel.QueueBind(queue: _queueName, exchange: "colab_logs", routingKey: "colabKey");
         Console.WriteLine(" [*] Waiting for Collaborator messages.");
     }
 

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5wbyINlezqXXLxuoYaE5xymhR5T7xJYq7hmLZXPHxuOiu9n6NPVmnjCrvXP+oJHrYY4HdsemDsF0jj+YQX1v5g==",
+  "dgSpecHash": "7cwuMHHOtlcryRpb33FFbtUA2YCKHiWlWXCQzDSx+7oGWMG5JJcHlDX9aYOIu8ycu5TPvk3QSKiMC16FiFMaUA==",
   "success": true,
-  "projectFilePath": "C:\\Works\\ColaboratorQ\\Domain\\Domain.csproj",
+  "projectFilePath": "C:\\Users\\ffigueiredo\\academia\\TrainingQ\\Domain\\Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
